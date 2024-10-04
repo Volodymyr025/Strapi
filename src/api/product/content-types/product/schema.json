@@ -33,6 +33,11 @@
       "type": "decimal",
       "unique": false,
       "required": true
+    },
+    "available": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

@@ -18,6 +18,9 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     img: Schema.Attribute.Media<'images', true> & Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     price: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    available: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
